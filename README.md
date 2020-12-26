@@ -2,14 +2,14 @@
 
 Pokedex with Flutter application.
 
-<div style="display: flex;  flex-direction: row;">
+<div style="display: flex;  flex-direction: row; place-content: center; ">
 
-<img src="assets/Screen 1.png" width="100" />
-<img src="assets/Screen 2.png" width="100" />
-<img src="assets/Screen 3.png" width="100" />
-<img src="assets/Screen 4.png" width="100" />
-<img src="assets/Screen 5.png" width="100" />
-<img src="assets/Screen 6.png" width="100" />
+<img src="assets/Screen 1.png" width="200" />
+<img src="assets/Screen 2.png" width="200" />
+<img src="assets/Screen 3.png" width="200" />
+<img src="assets/Screen 4.png" width="200" />
+<img src="assets/Screen 5.png" width="200" />
+<img src="assets/Screen 6.png" width="200" />
 
 
 
