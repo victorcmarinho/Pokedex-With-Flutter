@@ -2,12 +2,18 @@
 
 Pokedex with Flutter application.
 
-<img src="assets/Screen 1.png" width="80" />
-<img src="assets/Screen 2.png" width="80" />
-<img src="assets/Screen 3.png" width="80" />
-<img src="assets/Screen 4.png" width="80" />
-<img src="assets/Screen 5.png" width="80" />
-<img src="assets/Screen 6.png" width="80" />
+<div style="display: flex;  flex-direction: row;">
+
+<img src="assets/Screen 1.png" width="100" />
+<img src="assets/Screen 2.png" width="100" />
+<img src="assets/Screen 3.png" width="100" />
+<img src="assets/Screen 4.png" width="100" />
+<img src="assets/Screen 5.png" width="100" />
+<img src="assets/Screen 6.png" width="100" />
+
+
+
+</div>
 
 ## Getting Started
 
