@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:get_it/get_it.dart';
 import 'package:pokedex/const/consts_app.dart';
 import 'package:pokedex/models/pokeapi.dart';
 import 'package:pokedex/pages/home/widgets/app_bar.dart';
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    _pokemonStore = new PokeApiStore();
+    _pokemonStore = GetIt.instance<PokeApiStore>();
     if (_pokemonStore.pokeAPI == null) {
       _pokemonStore.fetchPokemonList();
     }

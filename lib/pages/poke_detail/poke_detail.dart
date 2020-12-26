@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:get_it/get_it.dart';
 import 'package:pokedex/const/consts_app.dart';
 import 'package:pokedex/models/pokeapi.dart';
 import 'package:pokedex/pages/about/about.dart';
@@ -33,8 +34,8 @@ class _PokeDetailPageState extends State<PokeDetailPage> {
     super.initState();
     _pageController =
         PageController(initialPage: widget.index, viewportFraction: 0.5);
-    _pokemonStore = new PokeApiStore();
-    _pokeApiV2Store = new PokeApiDetailStore();
+    _pokemonStore = GetIt.instance<PokeApiStore>();
+    _pokeApiV2Store = GetIt.instance<PokeApiDetailStore>();
     _pokeApiV2Store.getInfoPokemon(_pokemonStore.pokemonAtual.name);
     _pokeApiV2Store.getInfoSpecie(_pokemonStore.pokemonAtual.id.toString());
     _animation = MultiTrackTween([

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:get_it/get_it.dart';
 import 'package:md2_tab_indicator/md2_tab_indicator.dart';
 import 'package:mobx/mobx.dart';
 import 'package:pokedex/stores/pokeapi_store.dart';
@@ -23,7 +24,7 @@ class _AboutPageState extends State<AboutPage>
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
-    _pokemonStore = new PokeApiStore();
+    _pokemonStore = GetIt.instance<PokeApiStore>();
     _pageController = PageController(initialPage: 0);
 
     _disposer = reaction(

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:get_it/get_it.dart';
 import 'package:pokedex/models/pokeapi.dart';
 import 'package:pokedex/stores/pokeapi_store.dart';
 
 class AbaEvolucao extends StatelessWidget {
-  final PokeApiStore _pokeApiStore = new PokeApiStore();
+  final PokeApiStore _pokeApiStore = GetIt.instance<PokeApiStore>();
 
   Widget resizePokemon(Widget widget) {
     return SizedBox(height: 80, width: 80, child: widget);

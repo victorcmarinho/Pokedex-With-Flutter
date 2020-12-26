@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:get_it/get_it.dart';
 import 'package:pokedex/models/pokeapiv2.dart';
 import 'package:pokedex/stores/pokeapidetail_store.dart';
 
 class AbaStatus extends StatelessWidget {
-  final PokeApiDetailStore _pokeApiV2Store = new PokeApiDetailStore();
+  final PokeApiDetailStore _pokeApiV2Store =
+      GetIt.instance<PokeApiDetailStore>();
 
   List<int> getStatusPokemon(PokeApiV2 pokeApiV2) {
     List<int> list = [1, 2, 3, 4, 5, 6, 7];

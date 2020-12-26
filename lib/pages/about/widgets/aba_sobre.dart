@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:get_it/get_it.dart';
 import 'package:pokedex/components/circular_progress_about.dart';
 import 'package:pokedex/models/specie.dart';
 import 'package:pokedex/stores/pokeapidetail_store.dart';
 import 'package:pokedex/stores/pokeapi_store.dart';
 
 class AbaSobre extends StatelessWidget {
-  final PokeApiDetailStore _pokeApiV2Store = new PokeApiDetailStore();
-  final PokeApiStore _pokeApiStore = new PokeApiStore();
+  final PokeApiDetailStore _pokeApiV2Store =
+      GetIt.instance<PokeApiDetailStore>();
+  final PokeApiStore _pokeApiStore = GetIt.instance<PokeApiStore>();
   @override
   Widget build(BuildContext context) {
     return Container(
