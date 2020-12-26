@@ -2,7 +2,7 @@
 
 Pokedex with Flutter application.
 
-<div style="display: flex;  flex-direction: row; place-content: center; ">
+<div style="display: flex;  flex-direction: row; place-content: center; margin-left: auto; margin-right: auto; ">
 
 <img src="assets/Screen 1.png" width="200" />
 <img src="assets/Screen 2.png" width="200" />
